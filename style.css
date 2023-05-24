@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body{
-  background: grey;
+  background: white;
+  backdrop-filter: blur(1000px);
 }
 main{
   width: 100%;
@@ -21,7 +22,6 @@ section{
   background: white;
   width: 450px;
   padding: 25px;
-  border-radius: 10px;
 }
 .wrapper .gradient-box{
   width: 100%;  
@@ -32,4 +32,57 @@ section{
   display: flex;
   margin: 20px 0;
   justify-content: space-between;
+}
+.row :where(.column, button){
+  width: calc(100% / 2 - 12px);
+}
+.options p{
+  font-size: 20px;
+}
+.options .select-box{
+  border: 1px solid #aaa;
+  padding: 5px;
+}
+.select-box select{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  font-family: serif;
+}
+.options .colours{
+ margin-left: 60px;
+}
+.colours input{
+  height: 35px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.colours input:last-child{
+  margin-left: 10px;
+}
+.wrapper textarea{
+  width: 100%;
+  padding: 10px 15px;
+  color: #444444;
+  font-size: 15px;
+  resize: none;
+  border: 1px solid #ccc;
+}
+.buttons button{
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #444444;
+  margin: 0 0 -20px;
+}
+.buttons .copy{
+  background: none;
+  color: #444444;
+  border: 1px solid #444444;
 }
