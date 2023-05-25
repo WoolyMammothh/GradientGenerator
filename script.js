@@ -35,7 +35,7 @@ colourInputs.forEach(input => {
 const copyGradient = () => {
   navigator.clipboard.writeText(textarea.value);
   copyBtn.innerText = "Copied!";
-  setTimeout(() => copyGradient.innerText = "Copy Gradient", 400);
+  setTimeout(() => copyGradient.innerText = "Copy Gradient", 4);
 }
 
 const setStyle = () => {
